@@ -37,31 +37,33 @@ if (sectionOne) {
 
 // NYT NYT Vanilla JS
 
-const soundDog = new Audio("../sound/dog.wav");
-const soundHorse = new Audio("../sound/horse.wav");
-const soundBear = new Audio("../sound/bear.wav");
+const car = new Audio("../sound/car-engine-sound.mp3");
 
-const horseCard = document.getElementById("horseCard");
-const bearCard = document.getElementById("bearCard");
-const dogCard = document.getElementById("dogCard");
+const lamborghiniCard = document.getElementById("lamborghini");
+const bmwCard = document.getElementById("bmw");
+const mercedesCard = document.getElementById("mercedes");
 
-if (horseCard) {
-   horseCard.addEventListener("click", function() {
-      soundHorse.play();
-      horseCard.classList.toggle("flipped");
+if (lamborghiniCard) {
+   console.log('1');
+   
+   lamborghiniCard.addEventListener("click", function() {
+      car.play();
+      console.log('play sound');
+      lamborghiniCard.classList.toggle("flipped");
+      console.log('toggle flipped');
    });
 }
 
-if (bearCard) {
-   bearCard.addEventListener("click", function() {
-      soundBear.play();
-      bearCard.classList.toggle("flipped");
+if (bmwCard) {
+   bmwCard.addEventListener("click", function() {
+      car.play();
+      bmwCard.classList.toggle("flipped");
    });
 }
 
-if (dogCard) {
-   dogCard.addEventListener("click", function() {
-      soundDog.play();
-      dogCard.classList.toggle("flipped");
+if (mercedesCard) {
+   mercedesCard.addEventListener("click", function() {
+      car.play();
+      mercedesCard.classList.toggle("flipped");
    });
 }
